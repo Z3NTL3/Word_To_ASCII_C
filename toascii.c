@@ -25,7 +25,8 @@ char ToASCII(char* woordToASCII){
 
 int main()
 {
-    char* woord = (char*)malloc(10*sizeof(char));    
+    char w;
+    char* woord = (char*)calloc(10, sizeof(char));    
 
     printf("Write some letters: ");
     scanf("%s", &*woord);
