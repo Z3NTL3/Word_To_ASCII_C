@@ -36,6 +36,7 @@ int main()
 
     char* woord = (char*)calloc(10, sizeof(char)); 
     printf("%s", asciilogo);
+    free(asciilogo);
 
     printf("Write some letters: ");
     scanf("%s", woord);
@@ -53,7 +54,6 @@ int main()
     ToASCII(woord);
     free(woord);
     printf("\n");
-    
     return 0;
     
 }
