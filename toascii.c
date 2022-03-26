@@ -40,6 +40,6 @@ int main()
     }
     
     printf("You have entered: %s\n", woord);
-    ToASCII(woord);
+    ToASCII(&woord);
     return 0;
 }
