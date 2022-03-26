@@ -41,5 +41,6 @@ int main()
     
     printf("You have entered: %s\n", woord);
     ToASCII(&woord);
+    printf("\n");
     return 0;
 }
