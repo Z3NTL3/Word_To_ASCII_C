@@ -25,10 +25,10 @@ char ToASCII(char* woordToASCII){
 
 int main()
 {
-    char woord[10];
-    
+    char* woord = (char*)malloc(10*sizeof(char));    
+
     printf("Write some letters: ");
-    scanf("%10s", &woord);
+    scanf("%s", &*woord);
     printf("\n");
     
     if(strlen(woord) >= 10){
